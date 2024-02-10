@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kushal Thapa - Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #f8f9fa; }
+        nav { background-color: #343a40!important; }
+        .navbar-brand, .nav-link { color: #fff!important; }
+        .navbar-toggler-icon { background-color: #fff; }
+        .jumbotron { background-color: #343a40; color: #fff; padding: 80px 20px; margin-top: 20px; }
+        .card { margin-bottom: 20px; }
+        .card-title { font-size: 1.5rem; }
+        .btn-primary { background-color: #343a40; border-color: #343a40; }
+        .btn-primary:hover { background-color: #23272b; border-color: #23272b; }
+    </style>
+    <style>
+        {% load static %}
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kushal Thapa</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to My Portfolio</h1>
+        <p class="lead">Hello, I'm Kushal Thapa, a passionate AWS Python Developer. Explore my projects and skills to
+            get to know more about me.</p>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Latest Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'home/AWS serverless blog.jpeg' %}" width="350" height="250" alt="AWS Serverless Blog Image">
+                    <div class="card-body">
+                        <h5 class="card-title">AWS Serverless Blog with AWS Lamda and Dyanmo DB</h5>
+                        <p class="card-text">Build a serverless blog using AWS Lambda for handling request and DynamoDB for storing blog posts.</p>
+                        <a href="http://127.0.0.1:8000/projects" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'home/vpc.png' %}" width="350" height="250" alt="Python Programming Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Network Security and VPC Configuration</h5>
+                        <p class="card-text">Explore network security in AWS by configuring Virtual Private Cloud (VPC) subnets and security groups.Implement secure communication between resources.</p>
+                        <a href="http://127.0.0.1:8000/projects" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'home/dataanalysis.png' %}" width="350" height="250" alt="Python Programming Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Analysis with AWS GLue and Athena</h5>
+                        <p class="card-text">Use AWS Glue for ETL (Extract, Transform, Load) to prepare data for analysis.
+                            Query the processed data using AWS Athena and visualize results..</p>
+                        <a href="http://127.0.0.1:8000/projects" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'home/imageprocessing.png' %}" width="350" height="250" alt="Python Programming Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Image Processing with AWS Lamda and S3</h5>
+                        <p class="card-text">Created an image processing service using AWS Lamda triggered by S3 events and resize, compress or apply filters to images uploaded to an S3 Bucket</p>
+                        <a href="http://127.0.0.1:8000/projects" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'home/django.jpeg' %}" width="350" height="250" alt="Python Programming Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Application with Django on AWS Elastic Beanstalk</h5>
+                        <p class="card-text">Develop a web application using a Django and deployed the application on AWS Elastic Beanstalk, and configure auto-scaling</p>
+                        <a href="http://127.0.0.1:8000/projects" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'home/cloudwatch.png' %}" width="350" height="250" alt="Python Programming Image">
+                <div class="card-body">
+                    <h5 class="card-title">Monitoring and Alerts with CloudWatch</h5>
+                    <p class="card-text">Set up monitioring for your AWS resources using AWS CloudWatch and create custom metrics, alarms, and notificaitons for key performance indicators.</p>
+                    <a href="http://127.0.0.1:8000/projects" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
